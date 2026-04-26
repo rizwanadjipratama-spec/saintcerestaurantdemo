@@ -63,7 +63,7 @@ export default function Hero() {
           </a>
           <a
             href="#reservation"
-            className="bg-cream/10 backdrop-blur-md border border-cream/30 text-cream px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-cream/20 transition-all transform hover:scale-105 w-full sm:w-auto"
+            className="bg-transparent border-2 border-cream text-cream px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-cream hover:text-coffee transition-all transform hover:scale-105 w-full sm:w-auto"
           >
             Book Table
           </a>

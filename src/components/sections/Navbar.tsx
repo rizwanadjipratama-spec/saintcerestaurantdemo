@@ -22,14 +22,17 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        isScrolled ? "glass py-3 shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-cream py-3 shadow-md" : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link 
           href="/" 
-          className="text-2xl font-serif font-bold tracking-tight text-coffee"
+          className={cn(
+            "text-2xl font-serif font-bold tracking-tight transition-colors",
+            isScrolled ? "text-coffee" : "text-cream"
+          )}
         >
           SAINTCE<span className="text-accent">.</span>
         </Link>
@@ -40,14 +43,17 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium uppercase tracking-widest hover:text-accent transition-colors"
+              className={cn(
+                "text-sm font-medium uppercase tracking-widest transition-colors",
+                isScrolled ? "text-coffee hover:text-accent" : "text-cream hover:text-accent"
+              )}
             >
               {link.name}
             </Link>
           ))}
           <Link
             href="#reservation"
-            className="bg-coffee text-cream px-6 py-2 rounded-full text-sm font-medium uppercase tracking-widest hover:bg-accent transition-all transform hover:scale-105"
+            className="bg-accent text-cream px-6 py-2 rounded-full text-sm font-medium uppercase tracking-widest hover:bg-coffee transition-all transform hover:scale-105"
           >
             Reserve
           </Link>
@@ -55,7 +61,10 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-coffee"
+          className={cn(
+            "md:hidden transition-colors",
+            isScrolled ? "text-coffee" : "text-cream"
+          )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
