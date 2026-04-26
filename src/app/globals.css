@@ -35,6 +35,8 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, .font-serif {
@@ -71,4 +73,12 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #C97B63;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

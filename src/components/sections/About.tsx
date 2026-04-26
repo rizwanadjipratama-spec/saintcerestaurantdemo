@@ -10,7 +10,7 @@ export default function About() {
         {/* Images */}
         <div className="relative grid grid-cols-2 gap-4">
           <div className="pt-12">
-            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-700">
+            <div className="relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-700">
               <Image
                 src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop"
                 alt="Coffee preparation"
@@ -19,7 +19,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
+          <div className="relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-700">
             <Image
               src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?q=80&w=800&auto=format&fit=crop"
               alt="Fresh juice"

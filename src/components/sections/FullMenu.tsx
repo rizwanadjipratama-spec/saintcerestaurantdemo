@@ -20,8 +20,9 @@ export default function FullMenu() {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 md:gap-8 mb-12 border-b border-coffee/10 pb-4">
-          {(Object.keys(FULL_MENU) as Category[]).map((category) => (
+        <div className="overflow-x-auto no-scrollbar mb-12 border-b border-coffee/10">
+          <div className="flex justify-start md:justify-center min-w-max md:min-w-0 gap-4 md:gap-8 pb-4">
+            {(Object.keys(FULL_MENU) as Category[]).map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}

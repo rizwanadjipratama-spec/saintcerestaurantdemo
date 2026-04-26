@@ -23,8 +23,8 @@ export default function Reservation() {
     <Section id="reservation" className="bg-cream">
       <div className="max-w-5xl mx-auto glass rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
         {/* Info Column */}
-        <div className="lg:w-2/5 bg-coffee text-cream p-12 flex flex-col justify-center">
-          <h2 className="text-4xl font-serif font-bold mb-6">Book a Sanctuary</h2>
+        <div className="lg:w-2/5 bg-coffee text-cream p-8 md:p-12 flex flex-col justify-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Book a Sanctuary</h2>
           <p className="text-cream/70 mb-8 leading-relaxed">
             Planning a gathering or a quiet workspace? Reserve your table in advance and 
             we&apos;ll ensure your spot is ready with your favorite brew waiting.
@@ -36,7 +36,7 @@ export default function Reservation() {
         </div>
 
         {/* Form Column */}
-        <div className="lg:w-3/5 p-12 bg-white/50 relative">
+        <div className="lg:w-3/5 p-8 md:p-12 bg-white/50 relative">
           {!isSubmitted ? (
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
