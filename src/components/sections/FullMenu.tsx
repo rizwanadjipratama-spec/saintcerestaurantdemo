@@ -40,6 +40,7 @@ export default function FullMenu() {
               )}
             </button>
           ))}
+          </div>
         </div>
 
         {/* Menu List */}
