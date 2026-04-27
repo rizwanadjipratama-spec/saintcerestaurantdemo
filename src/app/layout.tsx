@@ -19,6 +19,20 @@ export const metadata: Metadata = {
   title: "Saintce Restaurant | Fresh Coffee & Juice Escape",
   description: "Experience the perfect blend of premium coffee and fresh juices in a modern, cozy atmosphere at Saintce Restaurant.",
   keywords: ["cafe", "coffee", "juice", "restaurant", "brunch", "saintce"],
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "saintce",
+    statusBarStyle: "default",
+    capable: true,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon1.png", type: "image/png" },
+      { url: "/icon0.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
